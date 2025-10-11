@@ -35,7 +35,7 @@ This repository contains the frontend of the system, designed to provide a moder
 
 - **Responsive design** for full mobile and desktop compatibility.
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 ```bash
 # Clone the repository
@@ -54,7 +54,7 @@ npm start
 npm run build
 ```
 
-🌐 Environment Variables
+## 🌐 Environment Variables
 
 Create a .env.local file in the project root and define the following variables:
 
@@ -65,12 +65,20 @@ VITE_FIREBASE_PROJECT_ID=your_project_id
 VITE_FIREBASE_APP_ID=your_app_id
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 VITE_BACKEND_BASE_URL=https://api.example.com/
+
+#VITE_DEMO_ENABLE=true
+#VITE_DEMO_ADMIN_EMAIL=admin@example.com
+#VITE_DEMO_ADMIN_PASSWORD=demo
 ```
 
-👥 User Roles
+## 👥 User Roles
 
 - **Administrator:** manages instructors, training programs, reports, and certificates.
 
 - **Instructor:** handles attendance, uploads evidence, and registers participants.
 
 - **Participant:** enrolls in events and marks attendance at sessions.
+
+## 🔗 Related Repositories
+
+**Backend Repository:** [SISGELAB Backend](https://github.com/JorgeMarles/fablab-api)

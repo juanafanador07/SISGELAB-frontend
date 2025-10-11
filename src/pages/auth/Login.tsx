@@ -23,7 +23,10 @@ import {
 import { Input } from "@/components/ui/input";
 import { InputPassword } from "@/components/ui/input-password";
 import useAuth from "@/hooks/useAuth";
+import { DEMO_ENABLE } from "@/lib/config";
 import { handleFirebaseError } from "@/lib/error";
+
+import DemoAlert from "./components/DemoAlert";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -84,8 +87,10 @@ export default function Login() {
     <div>
       <h1 className="mb-4 text-2xl font-bold">Iniciar Sesión</h1>
 
+      {DEMO_ENABLE && <DemoAlert />}
+
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="my-4 space-y-4">
           <FormField
             control={form.control}
             name="email"
