@@ -9,6 +9,6 @@ export const FIREBASE_MESSAGING_SENDER_ID = import.meta.env
 
 export const BACKEND_BASE_URL = import.meta.env.VITE_BACKEND_BASE_URL;
 
-export const DEMO_ENABLE = import.meta.env.VITE_DEMO_ENABLE;
+export const DEMO_ENABLE = import.meta.env.VITE_DEMO_ENABLE === "true";
 export const DEMO_ADMIN_EMAIL = import.meta.env.VITE_DEMO_ADMIN_EMAIL;
 export const DEMO_ADMIN_PASSWORD = import.meta.env.VITE_DEMO_ADMIN_PASSWORD;
